@@ -11,6 +11,7 @@ using System.Windows.Media.Animation;
 using System.Windows.Shapes;
 using System.Windows.Navigation;
 using SimpleMVVM.EmployeeServiceClient;
+using SimpleMVVM.ViewModels;
 
 namespace SimpleMVVM
 {
@@ -25,31 +26,33 @@ namespace SimpleMVVM
         // Executes when the user navigates to this page.
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            if (EmployeesGrid.ItemsSource == null)
+            if (_viewModel == null)
             {
+                _viewModel = new EmployeeListViewModel();
+                _viewModel.EmployeesLoaded += (s, ea) =>
+                {
+                    LoadingProgress.Visibility = Visibility.Collapsed;
+                };
+
                 LoadingProgress.Visibility = Visibility.Visible;
 
-                var client = new EmployeeServiceClient.EmployeeServiceClient();
-                client.GetEmployeesCompleted += new EventHandler<GetEmployeesCompletedEventArgs>(client_GetEmployeesCompleted);
-                client.GetEmployeesAsync();
+                DataContext = _viewModel;
+                _viewModel.LoadEmployees();
             }
-        }
-
-        void client_GetEmployeesCompleted(object sender, GetEmployeesCompletedEventArgs e)
-        {
-            LoadingProgress.Visibility = Visibility.Collapsed;
-            EmployeesGrid.ItemsSource = e.Result;
         }
 
         private EmployeeDetails _employeeDetails = new EmployeeDetails();
         private void EditEmployee_Click(object sender, RoutedEventArgs e)
         {
-            if (EmployeesGrid.SelectedItem != null)
-            {
-                var currentEmployee = EmployeesGrid.SelectedItem as Employee;
-                _employeeDetails.Employee = currentEmployee;
-                _employeeDetails.Show();
-            }
+            _employeeDetails.Employee = _viewModel.SelectedEmployee;
+            _employeeDetails.Show();
+        }
+
+        private EmployeeListViewModel _viewModel = null;
+
+        private void AddMoreVacation_Click(object sender, RoutedEventArgs e)
+        {
+            _viewModel.AddVacationBonusToSelectedEmployee();
         }
     }
 }
