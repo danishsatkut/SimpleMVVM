@@ -1,0 +1,17 @@
+﻿<configuration>
+    <system.serviceModel>
+        <bindings>
+            <customBinding>
+                <binding name="CustomBinding_EmployeeService">
+                    <binaryMessageEncoding />
+                    <httpTransport maxReceivedMessageSize="2147483647" maxBufferSize="2147483647" />
+                </binding>
+            </customBinding>
+        </bindings>
+        <client>
+            <endpoint address="http://localhost:3799/EmployeeService.svc"
+                binding="customBinding" bindingConfiguration="CustomBinding_EmployeeService"
+                contract="EmployeeServiceClient.EmployeeService" name="CustomBinding_EmployeeService" />
+        </client>
+    </system.serviceModel>
+</configuration>

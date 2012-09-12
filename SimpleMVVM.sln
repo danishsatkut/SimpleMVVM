@@ -2,6 +2,9 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleMVVM", "SimpleMVVM\SimpleMVVM.csproj", "{4BAEBF43-0012-4DAE-9596-1D19F36C868C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{813141A8-E600-42AC-ADC2-9AE3CC308670} = {813141A8-E600-42AC-ADC2-9AE3CC308670}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleMVVM.Web", "SimpleMVVM.Web\SimpleMVVM.Web.csproj", "{813141A8-E600-42AC-ADC2-9AE3CC308670}"
 EndProject

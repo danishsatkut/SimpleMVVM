@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/SimpleMVVM.Web" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/SimpleMVVM.Web" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:3799/EmployeeService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" />
+  <xs:import schemaLocation="http://localhost:3799/EmployeeService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="ArrayOfEmployee">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Employee" nillable="true" type="tns:Employee" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEmployee" nillable="true" type="tns:ArrayOfEmployee" />
+  <xs:complexType name="Employee">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q1:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="BirthDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="BusinessEntityID" type="xs:int" />
+          <xs:element minOccurs="0" name="CurrentFlag" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Gender" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="HireDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="JobTitle" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LoginID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MaritalStatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="NationalIDNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OrganizationLevel" nillable="true" type="xs:short" />
+          <xs:element minOccurs="0" name="Person" nillable="true" type="tns:Person" />
+          <xs:element minOccurs="0" name="PersonReference" nillable="true" type="q1:EntityReferenceOfPersonqc0sc8lz" />
+          <xs:element minOccurs="0" name="SalariedFlag" type="xs:boolean" />
+          <xs:element minOccurs="0" name="SickLeaveHours" type="xs:short" />
+          <xs:element minOccurs="0" name="VacationHours" type="xs:short" />
+          <xs:element minOccurs="0" name="rowguid" type="ser:guid" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Employee" nillable="true" type="tns:Employee" />
+  <xs:complexType name="Person">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q2:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AdditionalContactInfo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BusinessEntityID" type="xs:int" />
+          <xs:element minOccurs="0" name="Demographics" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EmailPromotion" type="xs:int" />
+          <xs:element minOccurs="0" name="Employee" nillable="true" type="tns:Employee" />
+          <xs:element minOccurs="0" name="EmployeeReference" nillable="true" type="q2:EntityReferenceOfEmployeeqc0sc8lz" />
+          <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MiddleName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="NameStyle" type="xs:boolean" />
+          <xs:element minOccurs="0" name="PersonType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Suffix" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="rowguid" type="ser:guid" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Person" nillable="true" type="tns:Person" />
+</xs:schema>
