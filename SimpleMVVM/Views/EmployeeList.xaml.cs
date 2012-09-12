@@ -40,5 +40,16 @@ namespace SimpleMVVM
             LoadingProgress.Visibility = Visibility.Collapsed;
             EmployeesGrid.ItemsSource = e.Result;
         }
+
+        private EmployeeDetails _employeeDetails = new EmployeeDetails();
+        private void EditEmployee_Click(object sender, RoutedEventArgs e)
+        {
+            if (EmployeesGrid.SelectedItem != null)
+            {
+                var currentEmployee = EmployeesGrid.SelectedItem as Employee;
+                _employeeDetails.Employee = currentEmployee;
+                _employeeDetails.Show();
+            }
+        }
     }
 }

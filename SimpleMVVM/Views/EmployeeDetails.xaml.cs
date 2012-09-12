@@ -9,6 +9,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Shapes;
+using SimpleMVVM.EmployeeServiceClient;
 
 namespace SimpleMVVM
 {
@@ -17,6 +18,17 @@ namespace SimpleMVVM
         public EmployeeDetails()
         {
             InitializeComponent();
+        }
+
+        private Employee _employee;
+        public Employee Employee
+        {
+            get { return _employee; }
+            set 
+            { 
+                _employee = value;
+                DataContext = _employee;
+            }
         }
 
         private void OKButton_Click(object sender, RoutedEventArgs e)
