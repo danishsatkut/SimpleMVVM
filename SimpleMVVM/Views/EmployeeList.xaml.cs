@@ -10,6 +10,7 @@ using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Shapes;
 using System.Windows.Navigation;
+using SimpleMVVM.EmployeeServiceClient;
 
 namespace SimpleMVVM
 {
@@ -18,11 +19,26 @@ namespace SimpleMVVM
         public EmployeeList()
         {
             InitializeComponent();
+            this.NavigationCacheMode = NavigationCacheMode.Enabled;
         }
 
         // Executes when the user navigates to this page.
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+            if (EmployeesGrid.ItemsSource == null)
+            {
+                LoadingProgress.Visibility = Visibility.Visible;
+
+                var client = new EmployeeServiceClient.EmployeeServiceClient();
+                client.GetEmployeesCompleted += new EventHandler<GetEmployeesCompletedEventArgs>(client_GetEmployeesCompleted);
+                client.GetEmployeesAsync();
+            }
+        }
+
+        void client_GetEmployeesCompleted(object sender, GetEmployeesCompletedEventArgs e)
+        {
+            LoadingProgress.Visibility = Visibility.Collapsed;
+            EmployeesGrid.ItemsSource = e.Result;
         }
     }
 }
