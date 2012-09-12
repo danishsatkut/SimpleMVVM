@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleMVVM", "SimpleMVVM\SimpleMVVM.csproj", "{4BAEBF43-0012-4DAE-9596-1D19F36C868C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleMVVM.Web", "SimpleMVVM.Web\SimpleMVVM.Web.csproj", "{813141A8-E600-42AC-ADC2-9AE3CC308670}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4BAEBF43-0012-4DAE-9596-1D19F36C868C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BAEBF43-0012-4DAE-9596-1D19F36C868C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BAEBF43-0012-4DAE-9596-1D19F36C868C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BAEBF43-0012-4DAE-9596-1D19F36C868C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{813141A8-E600-42AC-ADC2-9AE3CC308670}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{813141A8-E600-42AC-ADC2-9AE3CC308670}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{813141A8-E600-42AC-ADC2-9AE3CC308670}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{813141A8-E600-42AC-ADC2-9AE3CC308670}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
