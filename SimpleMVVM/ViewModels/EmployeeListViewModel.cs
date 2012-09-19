@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.ObjectModel;
 using SimpleMVVM.EmployeeServiceClient;
+using SimpleMVVM.Services;
 
 namespace SimpleMVVM.ViewModels
 {
@@ -47,8 +48,11 @@ namespace SimpleMVVM.ViewModels
 
         public void AddVacationBonusToSelectedEmployee()
         {
-            if (SelectedEmployee != null)
-                SelectedEmployee.VacationHours += 10;
+            if (SelectedEmployee != null) 
+            {
+                var vacationBonusService = new EmployeeVacationBonusService();
+                SelectedEmployee.VacationHours += vacationBonusService.AddVacationBonus(SelectedEmployee.HireDate);
+            }
         }
 
         public event EventHandler EmployeesLoaded;
