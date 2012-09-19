@@ -34,6 +34,7 @@ namespace SimpleMVVM.ViewModels
             { 
                 _selectedEmployee = value;
                 OnPropertyChanged("SelectedEmployee");
+                AddVacationBonusCommand.OnCanExecuteChanged();
             }
         }
 
@@ -70,5 +71,31 @@ namespace SimpleMVVM.ViewModels
             if (EmployeesLoaded != null)
                 EmployeesLoaded(this, EventArgs.Empty);
         }
+
+        #region Commands
+
+        public bool CanAddBonus
+        {
+            get { return SelectedEmployee != null; }
+        }
+
+        private ViewModelCommand _addVacationBonusCommand = null;
+        public ViewModelCommand AddVacationBonusCommand
+        {
+            get
+            {
+                if (_addVacationBonusCommand == null)
+                {
+                    _addVacationBonusCommand = new ViewModelCommand(
+                        p => AddVacationBonusToSelectedEmployee(),
+                        p => CanAddBonus
+                    );
+                }
+
+                return _addVacationBonusCommand;
+            }
+        }
+
+        #endregion
     }
 }

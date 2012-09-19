@@ -2,7 +2,8 @@
 	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
 	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-	xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"	xmlns:SimpleMVVM_ViewModels="clr-namespace:SimpleMVVM.ViewModels"
+	xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"	
+	xmlns:SimpleMVVM_ViewModels="clr-namespace:SimpleMVVM.ViewModels"
 	mc:Ignorable="d"
 	x:Class="SimpleMVVM.EmployeeList" 
 	Title="EmployeeList Page"
@@ -12,11 +13,11 @@
 		<SimpleMVVM_ViewModels:EmployeeListViewModel x:Key="EmployeeListViewModelDataSource" d:IsDataSource="True"/>
 	</sdk:Page.Resources>
 	
-	<Grid x:Name="LayoutRoot" >
+	<Grid x:Name="LayoutRoot" d:DataContext="{Binding Source={StaticResource EmployeeListViewModelDataSource}}" >
 		<sdk:DataGrid x:Name="EmployeesGrid" Margin="12,55,119,12" AutoGenerateColumns="True" ItemsSource="{Binding Employees}" SelectedItem="{Binding SelectedEmployee, Mode=TwoWay}"/>
 		<Button x:Name="AddMoreVacation" Content="More Vacation!" 
 				Height="23" Width="101" Margin="0,55,12,0"
-				HorizontalAlignment="Right" VerticalAlignment="Top" Click="AddMoreVacation_Click"/>
+				HorizontalAlignment="Right" VerticalAlignment="Top" Command="{Binding AddVacationBonusCommand, Mode=OneWay}"/>
 		<Button x:Name="EditEmployee" Content="Edit Employee" 
 				HorizontalAlignment="Right" VerticalAlignment="Top" 
 				Height="23" Width="101" Margin="0,82,12,0" Click="EditEmployee_Click"/>

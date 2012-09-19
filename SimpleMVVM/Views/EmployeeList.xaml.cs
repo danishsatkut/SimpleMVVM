@@ -16,6 +16,8 @@ namespace SimpleMVVM
 {
     public partial class EmployeeList : Page
     {
+        private EmployeeListViewModel _viewModel = null;
+
         public EmployeeList()
         {
             InitializeComponent();
@@ -45,13 +47,6 @@ namespace SimpleMVVM
         {
             _employeeDetails.Employee = _viewModel.SelectedEmployee;
             _employeeDetails.Show();
-        }
-
-        private EmployeeListViewModel _viewModel = null;
-
-        private void AddMoreVacation_Click(object sender, RoutedEventArgs e)
-        {
-            _viewModel.AddVacationBonusToSelectedEmployee();
         }
     }
 }
