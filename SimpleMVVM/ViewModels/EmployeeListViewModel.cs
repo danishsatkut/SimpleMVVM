@@ -7,6 +7,8 @@ namespace SimpleMVVM.ViewModels
 {
     public class EmployeeListViewModel : ViewModel
     {
+        private EmployeeDataService _dataService = new EmployeeDataService();
+
         /// <summary>
         ///     Collection containing all the employees to be displayed.
         /// </summary>
@@ -37,13 +39,20 @@ namespace SimpleMVVM.ViewModels
 
         public void LoadEmployees()
         {
-            var client = new EmployeeServiceClient.EmployeeServiceClient();
-            client.GetEmployeesCompleted += (s, ea) =>
+            if (_dataService.AreEmployeesLoaded)
             {
-                Employees = ea.Result;
+                Employees = _dataService.Employees;
                 OnEmployeesLoaded();
-            };
-            client.GetEmployeesAsync();
+            }
+            else
+            {
+                _dataService.EmployeesLoaded += (s, ea) =>
+                {
+                    Employees = _dataService.Employees;
+                    OnEmployeesLoaded();
+                };
+                _dataService.LoadEmployees();
+            }
         }
 
         public void AddVacationBonusToSelectedEmployee()
