@@ -17,6 +17,7 @@ namespace SimpleMVVM
     public partial class EmployeeList : Page
     {
         private EmployeeListViewModel _viewModel = null;
+        private EmployeeDetails _employeeDetails = new EmployeeDetails();
 
         public EmployeeList()
         {
@@ -37,16 +38,16 @@ namespace SimpleMVVM
 
                 LoadingProgress.Visibility = Visibility.Visible;
 
+                // Attach handler for showing EmployeeDetails dialog
+                _viewModel.ShowEditEmployeeDialog += (s, ea) =>
+                {
+                    _employeeDetails.Employee = ea.SelectedEmployee;
+                    _employeeDetails.Show();
+                };
+
                 DataContext = _viewModel;
                 _viewModel.LoadEmployees();
             }
-        }
-
-        private EmployeeDetails _employeeDetails = new EmployeeDetails();
-        private void EditEmployee_Click(object sender, RoutedEventArgs e)
-        {
-            _employeeDetails.Employee = _viewModel.SelectedEmployee;
-            _employeeDetails.Show();
         }
     }
 }

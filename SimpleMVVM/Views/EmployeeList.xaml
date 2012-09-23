@@ -20,7 +20,7 @@
 				HorizontalAlignment="Right" VerticalAlignment="Top" Command="{Binding AddVacationBonusCommand, Mode=OneWay}"/>
 		<Button x:Name="EditEmployee" Content="Edit Employee" 
 				HorizontalAlignment="Right" VerticalAlignment="Top" 
-				Height="23" Width="101" Margin="0,82,12,0" Click="EditEmployee_Click"/>
+				Height="23" Width="101" Margin="0,82,12,0" Command="{Binding EditSelectedeEmployeeCommand, Mode=OneWay}"/>
 		<Grid x:Name="LoadingProgress" Margin="234,220,206,220" Background="#CCFFFFFF" Visibility="Collapsed">
 			<ProgressBar Margin="284,235,256,235" HorizontalAlignment="Center" VerticalAlignment="Center" Width="200" Height="40" IsIndeterminate="True"/>
 		</Grid>

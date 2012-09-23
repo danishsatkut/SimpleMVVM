@@ -35,6 +35,7 @@ namespace SimpleMVVM.ViewModels
                 _selectedEmployee = value;
                 OnPropertyChanged("SelectedEmployee");
                 AddVacationBonusCommand.OnCanExecuteChanged();
+                EditSelectedeEmployeeCommand.OnCanExecuteChanged();
             }
         }
 
@@ -56,21 +57,14 @@ namespace SimpleMVVM.ViewModels
             }
         }
 
-        public void AddVacationBonusToSelectedEmployee()
-        {
-            if (SelectedEmployee != null) 
-            {
-                var vacationBonusService = new EmployeeVacationBonusService();
-                SelectedEmployee.VacationHours += vacationBonusService.AddVacationBonus(SelectedEmployee.HireDate);
-            }
-        }
-
         public event EventHandler EmployeesLoaded;
         protected void OnEmployeesLoaded()
         {
             if (EmployeesLoaded != null)
                 EmployeesLoaded(this, EventArgs.Empty);
         }
+
+        public event EventHandler<ShowEditEmployeeDialogEventArgs> ShowEditEmployeeDialog;
 
         #region Commands
 
@@ -96,6 +90,57 @@ namespace SimpleMVVM.ViewModels
             }
         }
 
+        // Command calls this method as the action
+        private void AddVacationBonusToSelectedEmployee()
+        {
+            if (SelectedEmployee != null)
+            {
+                var vacationBonusService = new EmployeeVacationBonusService();
+                SelectedEmployee.VacationHours += vacationBonusService.AddVacationBonus(SelectedEmployee.HireDate);
+            }
+        }
+
+        public bool CanEditEmployee
+        {
+            get { return SelectedEmployee != null; }
+        }
+
+        private ViewModelCommand _editSelectedEmployeeCommand = null;
+        public ViewModelCommand EditSelectedeEmployeeCommand
+        {
+            get
+            {
+                if (_editSelectedEmployeeCommand == null)
+                {
+                    _editSelectedEmployeeCommand = new ViewModelCommand(
+                            p => EditSelectedEmployee(),
+                            p => CanEditEmployee
+                        );
+                }
+
+                return _editSelectedEmployeeCommand;
+            }
+        }
+
+        // Command calls this method as action
+        private void EditSelectedEmployee()
+        {
+            if (SelectedEmployee != null)
+            {
+                ShowEditEmployeeDialog(this, new ShowEditEmployeeDialogEventArgs(SelectedEmployee));
+            }
+        }
+
         #endregion
+    }
+
+    public class ShowEditEmployeeDialogEventArgs : EventArgs
+    {
+        public Employee SelectedEmployee { get; set; }
+
+        public ShowEditEmployeeDialogEventArgs(Employee selectedEmployee)
+        {
+            SelectedEmployee = selectedEmployee;
+        }
     }
 }
