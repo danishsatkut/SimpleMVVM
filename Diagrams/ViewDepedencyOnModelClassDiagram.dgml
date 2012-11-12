@@ -1,0 +1,691 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph GraphDirection="BottomToTop" Layout="Sugiyama" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="(@1 @10 @11 Member=(Name=CancelButton_Click OverloadingParameters=[@64,(@36 Namespace=System.Windows Type=RoutedEventArgs)]))" Category="CodeSchema_Method" CodeSchemaProperty_IsPrivate="True" Label="CancelButton_Click" />
+    <Node Id="(@1 @10 @11 Member=(Name=OKButton_Click OverloadingParameters=[@64,(@36 Namespace=System.Windows Type=RoutedEventArgs)]))" Category="CodeSchema_Method" CodeSchemaProperty_IsPrivate="True" Label="OKButton_Click" />
+    <Node Id="(@1 @15 @16 Member=(Name=remove_EmployeesLoaded @53))" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="remove_EmployeesLoaded" />
+    <Node Id="(@1 @15 @16 Member=(Name=remove_ShowEditEmployeeDialog OverloadingParameters=[(@31 @32 Type=(Name=EventHandler @33 GenericArguments=[@26]))]))" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="remove_ShowEditEmployeeDialog" />
+    <Node Id="(@1 @15 @16 Member=get_Employees)" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="get_Employees" />
+    <Node Id="(@1 @15 @27 Member=(Name=add_PropertyChanged OverloadingParameters=[(@34 Namespace=System.ComponentModel Type=PropertyChangedEventHandler)]))" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="add_PropertyChanged" />
+    <Node Id="(@1 @15 @27 Member=(Name=remove_PropertyChanged OverloadingParameters=[(@34 Namespace=System.ComponentModel Type=PropertyChangedEventHandler)]))" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="remove_PropertyChanged" />
+    <Node Id="(@1 @15 @29 Member=(Name=CanExecute @65))" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" Label="CanExecute" />
+    <Node Id="(@1 @15 @29 Member=(Name=Execute @65))" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" Label="Execute" />
+    <Node Id="(@1 @15 @29 Member=(Name=add_CanExecuteChanged @53))" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="add_CanExecuteChanged" />
+    <Node Id="(@1 @15 @29 Member=(Name=remove_CanExecuteChanged @53))" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="remove_CanExecuteChanged" />
+    <Node Id="(@1 @2 @19 Member=(@39 @77))" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="EmployeeServiceClient" />
+    <Node Id="(@1 @2 @19 Member=(@39 OverloadingParameters=[(@40 Namespace=System.ServiceModel.Channels Type=Binding),(@40 Namespace=System.ServiceModel Type=EndpointAddress)]))" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="EmployeeServiceClient" />
+    <Node Id="(@1 @2 @19 Member=(@39 OverloadingParameters=[@76,(@40 Namespace=System.ServiceModel Type=EndpointAddress)]))" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="EmployeeServiceClient" />
+    <Node Id="(@1 @2 @19 Member=(@39 OverloadingParameters=[@76,@76]))" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="EmployeeServiceClient" />
+    <Node Id="(@1 @2 @19 Member=(Name=add_CloseCompleted @35))" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="add_CloseCompleted" />
+    <Node Id="(@1 @2 @19 Member=(Name=add_OpenCompleted @35))" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="add_OpenCompleted" />
+    <Node Id="(@1 @2 @19 Member=(Name=remove_CloseCompleted @35))" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="remove_CloseCompleted" />
+    <Node Id="(@1 @2 @19 Member=(Name=remove_GetEmployeesCompleted OverloadingParameters=[(@31 @32 Type=(Name=EventHandler @33 GenericArguments=[@22]))]))" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="remove_GetEmployeesCompleted" />
+    <Node Id="(@1 @2 @19 Member=(Name=remove_OpenCompleted @35))" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="remove_OpenCompleted" />
+    <Node Id="(@1 @2 @19 Member=(Name=set_CookieContainer OverloadingParameters=[(@46 Namespace=System.Net Type=CookieContainer)]))" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="set_CookieContainer" />
+    <Node Id="(@1 @2 @19 Member=get_CookieContainer)" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="get_CookieContainer" />
+    <Node Id="(@1 @2 @23 @90)" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="Person" />
+    <Node Id="(@1 @2 @23 Member=(Name=set_AdditionalContactInfo @77))" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="set_AdditionalContactInfo" />
+    <Node Id="(@1 @2 @23 Member=(Name=set_BusinessEntityID OverloadingParameters=[(@31 @32 Type=Int32)]))" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="set_BusinessEntityID" />
+    <Node Id="(@1 @2 @23 Member=(Name=set_Demographics @77))" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="set_Demographics" />
+    <Node Id="(@1 @2 @23 Member=(Name=set_EmailPromotion OverloadingParameters=[(@31 @32 Type=Int32)]))" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="set_EmailPromotion" />
+    <Node Id="(@1 @2 @23 Member=(Name=set_Employee OverloadingParameters=[@6]))" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="set_Employee" />
+    <Node Id="(@1 @2 @23 Member=(Name=set_EmployeeReference OverloadingParameters=[(@1 @2 Type=EntityReferenceOfEmployeeqc0sc8lz)]))" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="set_EmployeeReference" />
+    <Node Id="(@1 @2 @23 Member=(Name=set_FirstName @77))" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="set_FirstName" />
+    <Node Id="(@1 @2 @23 Member=(Name=set_LastName @77))" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="set_LastName" />
+    <Node Id="(@1 @2 @23 Member=(Name=set_MiddleName @77))" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="set_MiddleName" />
+    <Node Id="(@1 @2 @23 Member=(Name=set_ModifiedDate @47))" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="set_ModifiedDate" />
+    <Node Id="(@1 @2 @23 Member=(Name=set_NameStyle @44))" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="set_NameStyle" />
+    <Node Id="(@1 @2 @23 Member=(Name=set_PersonType @77))" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="set_PersonType" />
+    <Node Id="(@1 @2 @23 Member=(Name=set_Suffix @77))" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="set_Suffix" />
+    <Node Id="(@1 @2 @23 Member=(Name=set_Title @77))" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="set_Title" />
+    <Node Id="(@1 @2 @23 Member=(Name=set_rowguid OverloadingParameters=[(@31 @32 Type=Guid)]))" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="set_rowguid" />
+    <Node Id="(@1 @2 @23 Member=get_AdditionalContactInfo)" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="get_AdditionalContactInfo" />
+    <Node Id="(@1 @2 @23 Member=get_BusinessEntityID)" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="get_BusinessEntityID" />
+    <Node Id="(@1 @2 @23 Member=get_Demographics)" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="get_Demographics" />
+    <Node Id="(@1 @2 @23 Member=get_EmailPromotion)" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="get_EmailPromotion" />
+    <Node Id="(@1 @2 @23 Member=get_EmployeeReference)" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="get_EmployeeReference" />
+    <Node Id="(@1 @2 @23 Member=get_FirstName)" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="get_FirstName" />
+    <Node Id="(@1 @2 @23 Member=get_LastName)" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="get_LastName" />
+    <Node Id="(@1 @2 @23 Member=get_MiddleName)" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="get_MiddleName" />
+    <Node Id="(@1 @2 @23 Member=get_ModifiedDate)" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="get_ModifiedDate" />
+    <Node Id="(@1 @2 @23 Member=get_NameStyle)" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="get_NameStyle" />
+    <Node Id="(@1 @2 @23 Member=get_PersonType)" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="get_PersonType" />
+    <Node Id="(@1 @2 @23 Member=get_Suffix)" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="get_Suffix" />
+    <Node Id="(@1 @2 @23 Member=get_Title)" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="get_Title" />
+    <Node Id="(@1 @2 @23 Member=get_rowguid)" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="get_rowguid" />
+    <Node Id="(@1 @2 @3 Member=(Name=BeginGetEmployees OverloadingParameters=[(@31 @32 Type=AsyncCallback),@64]))" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" Label="BeginGetEmployees" />
+    <Node Id="(@1 @2 @3 Member=(Name=EndGetEmployees @56))" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" Label="EndGetEmployees" />
+    <Node Id="(@1 @2 @5 @90)" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="Employee" />
+    <Node Id="(@1 @2 @5 Member=(Name=set_BirthDate @47))" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="set_BirthDate" />
+    <Node Id="(@1 @2 @5 Member=(Name=set_BusinessEntityID OverloadingParameters=[(@31 @32 Type=Int32)]))" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="set_BusinessEntityID" />
+    <Node Id="(@1 @2 @5 Member=(Name=set_CurrentFlag @44))" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="set_CurrentFlag" />
+    <Node Id="(@1 @2 @5 Member=(Name=set_Gender @77))" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="set_Gender" />
+    <Node Id="(@1 @2 @5 Member=(Name=set_HireDate @47))" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="set_HireDate" />
+    <Node Id="(@1 @2 @5 Member=(Name=set_JobTitle @77))" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="set_JobTitle" />
+    <Node Id="(@1 @2 @5 Member=(Name=set_LoginID @77))" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="set_LoginID" />
+    <Node Id="(@1 @2 @5 Member=(Name=set_MaritalStatus @77))" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="set_MaritalStatus" />
+    <Node Id="(@1 @2 @5 Member=(Name=set_ModifiedDate @47))" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="set_ModifiedDate" />
+    <Node Id="(@1 @2 @5 Member=(Name=set_NationalIDNumber @77))" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="set_NationalIDNumber" />
+    <Node Id="(@1 @2 @5 Member=(Name=set_OrganizationLevel OverloadingParameters=[(@31 @32 Type=(Name=Nullable @33 GenericArguments=[(@31 @32 Type=Int16)]))]))" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="set_OrganizationLevel" />
+    <Node Id="(@1 @2 @5 Member=(Name=set_Person OverloadingParameters=[@24]))" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="set_Person" />
+    <Node Id="(@1 @2 @5 Member=(Name=set_PersonReference OverloadingParameters=[(@1 @2 Type=EntityReferenceOfPersonqc0sc8lz)]))" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="set_PersonReference" />
+    <Node Id="(@1 @2 @5 Member=(Name=set_SalariedFlag @44))" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="set_SalariedFlag" />
+    <Node Id="(@1 @2 @5 Member=(Name=set_SickLeaveHours OverloadingParameters=[(@31 @32 Type=Int16)]))" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="set_SickLeaveHours" />
+    <Node Id="(@1 @2 @5 Member=(Name=set_rowguid OverloadingParameters=[(@31 @32 Type=Guid)]))" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="set_rowguid" />
+    <Node Id="(@1 @2 @5 Member=get_BirthDate)" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="get_BirthDate" />
+    <Node Id="(@1 @2 @5 Member=get_BusinessEntityID)" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="get_BusinessEntityID" />
+    <Node Id="(@1 @2 @5 Member=get_CurrentFlag)" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="get_CurrentFlag" />
+    <Node Id="(@1 @2 @5 Member=get_Gender)" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="get_Gender" />
+    <Node Id="(@1 @2 @5 Member=get_JobTitle)" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="get_JobTitle" />
+    <Node Id="(@1 @2 @5 Member=get_LoginID)" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="get_LoginID" />
+    <Node Id="(@1 @2 @5 Member=get_MaritalStatus)" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="get_MaritalStatus" />
+    <Node Id="(@1 @2 @5 Member=get_ModifiedDate)" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="get_ModifiedDate" />
+    <Node Id="(@1 @2 @5 Member=get_NationalIDNumber)" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="get_NationalIDNumber" />
+    <Node Id="(@1 @2 @5 Member=get_OrganizationLevel)" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="get_OrganizationLevel" />
+    <Node Id="(@1 @2 @5 Member=get_PersonReference)" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="get_PersonReference" />
+    <Node Id="(@1 @2 @5 Member=get_SalariedFlag)" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="get_SalariedFlag" />
+    <Node Id="(@1 @2 @5 Member=get_SickLeaveHours)" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="get_SickLeaveHours" />
+    <Node Id="(@1 @2 @5 Member=get_rowguid)" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="get_rowguid" />
+    <Node Id="(@1 @7 @8 Member=(Name=remove_EmployeesLoaded @53))" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="remove_EmployeesLoaded" />
+    <Node Id="@100" Category="CodeSchema_Method" CodeSchemaProperty_IsProtected="True" Label="CreateChannel" />
+    <Node Id="@101" Category="CodeSchema_Method" CodeSchemaProperty_IsPrivate="True" Label="EditSelectedEmployee" />
+    <Node Id="@102" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="get_AddVacationBonusCommand" />
+    <Node Id="@103" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="get_AreEmployeesLoaded" />
+    <Node Id="@104" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="get_CanAddBonus" />
+    <Node Id="@105" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="get_CanEditEmployee" />
+    <Node Id="@106" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="get_EditSelectedeEmployeeCommand" />
+    <Node Id="@107" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="get_Employee" />
+    <Node Id="@108" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="get_Employee" />
+    <Node Id="@109" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="get_Employees" />
+    <Node Id="@110" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="get_HireDate" />
+    <Node Id="@111" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="get_Person" />
+    <Node Id="@112" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="get_Result" />
+    <Node Id="@113" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="get_SelectedEmployee" />
+    <Node Id="@114" Category="CodeSchema_Method" CodeSchemaProperty_IsCompilerGenerated="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="get_SelectedEmployee" />
+    <Node Id="@115" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="get_VacationHours" />
+    <Node Id="@116" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" Label="GetEmployeesAsync" />
+    <Node Id="@117" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" Label="InitializeComponent" />
+    <Node Id="@118" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" Label="InitializeComponent" />
+    <Node Id="@119" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" Label="LoadEmployees" />
+    <Node Id="@12" Category="CodeSchema_Class" CodeSchemaProperty_IsPublic="True" Group="Collapsed" Label="EmployeeDetails" />
+    <Node Id="@120" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" Label="LoadEmployees" />
+    <Node Id="@121" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" Label="OnCanExecuteChanged" />
+    <Node Id="@122" Category="CodeSchema_Method" CodeSchemaProperty_IsPrivate="True" Label="OnEmployeesLoaded" />
+    <Node Id="@123" Category="CodeSchema_Method" CodeSchemaProperty_IsProtected="True" Label="OnEmployeesLoaded" />
+    <Node Id="@124" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" Label="OpenAsync" />
+    <Node Id="@14" Category="CodeSchema_Class" CodeSchemaProperty_IsPublic="True" Group="Collapsed" Label="EmployeeList" />
+    <Node Id="@17" Category="CodeSchema_Class" CodeSchemaProperty_IsPublic="True" Group="Collapsed" Label="EmployeeListViewModel" />
+    <Node Id="@18" Category="CodeSchema_Interface" CodeSchemaProperty_IsGeneratedCode="True" CodeSchemaProperty_IsPublic="True" Group="Collapsed" Label="EmployeeService" />
+    <Node Id="@20" Category="CodeSchema_Class" CodeSchemaProperty_IsGeneratedCode="True" CodeSchemaProperty_IsPublic="True" Group="Collapsed" Label="EmployeeServiceClient" />
+    <Node Id="@21" Category="CodeSchema_Class" CodeSchemaProperty_IsPublic="True" Group="Collapsed" Label="EmployeeVacationBonusService" />
+    <Node Id="@22" Category="CodeSchema_Class" CodeSchemaProperty_IsGeneratedCode="True" CodeSchemaProperty_IsPublic="True" Group="Collapsed" Label="GetEmployeesCompletedEventArgs" />
+    <Node Id="@24" Category="CodeSchema_Class" CodeSchemaProperty_IsGeneratedCode="True" CodeSchemaProperty_IsPublic="True" Group="Collapsed" Label="Person" />
+    <Node Id="@26" Category="CodeSchema_Class" CodeSchemaProperty_IsPublic="True" Group="Collapsed" Label="ShowEditEmployeeDialogEventArgs" />
+    <Node Id="@28" Category="CodeSchema_Class" CodeSchemaProperty_IsPublic="True" Group="Collapsed" Label="ViewModel" />
+    <Node Id="@30" Category="CodeSchema_Class" CodeSchemaProperty_IsPublic="True" Group="Collapsed" Label="ViewModelCommand" />
+    <Node Id="@37" Category="CodeSchema_Method" CodeSchemaProperty_IsPrivate="True" CodeSchemaProperty_IsSpecialName="True" Label="set_Employees" />
+    <Node Id="@38" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="set_Employees" />
+    <Node Id="@4" Category="CodeSchema_Class" CodeSchemaProperty_IsPrivate="True" Group="Collapsed" Label="EmployeeServiceClient.EmployeeServiceClientChannel" />
+    <Node Id="@41" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="EmployeeServiceClientChannel" />
+    <Node Id="@42" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="add_GetEmployeesCompleted" />
+    <Node Id="@43" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="add_ShowEditEmployeeDialog" />
+    <Node Id="@45" Category="CodeSchema_Method" CodeSchemaProperty_IsPrivate="True" CodeSchemaProperty_IsSpecialName="True" Label="set_AreEmployeesLoaded" />
+    <Node Id="@48" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" Label="AddVacationBonus" />
+    <Node Id="@49" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="ShowEditEmployeeDialogEventArgs" />
+    <Node Id="@50" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="set_Employee" />
+    <Node Id="@51" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="set_SelectedEmployee" />
+    <Node Id="@52" Category="CodeSchema_Method" CodeSchemaProperty_IsCompilerGenerated="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="set_SelectedEmployee" />
+    <Node Id="@54" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="add_EmployeesLoaded" />
+    <Node Id="@55" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="add_EmployeesLoaded" />
+    <Node Id="@57" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" Label="EndGetEmployees" />
+    <Node Id="@58" Category="CodeSchema_Method" CodeSchemaProperty_IsPrivate="True" Label="OnEndClose" />
+    <Node Id="@59" Category="CodeSchema_Method" CodeSchemaProperty_IsPrivate="True" Label="OnEndGetEmployees" />
+    <Node Id="@6" Category="CodeSchema_Class" CodeSchemaProperty_IsGeneratedCode="True" CodeSchemaProperty_IsPublic="True" Group="Collapsed" Label="Employee" />
+    <Node Id="@60" Category="CodeSchema_Method" CodeSchemaProperty_IsPrivate="True" Label="OnEndOpen" />
+    <Node Id="@61" Category="CodeSchema_Method" CodeSchemaProperty_IsPrivate="True" Label="SimpleMVVM.EmployeeServiceClient.EmployeeService.EndGetEmployees" />
+    <Node Id="@62" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="set_VacationHours" />
+    <Node Id="@63" Category="CodeSchema_Method" CodeSchemaProperty_IsProtected="True" Label="OnNavigatedTo" />
+    <Node Id="@66" Category="CodeSchema_Method" CodeSchemaProperty_IsCompilerGenerated="True" CodeSchemaProperty_IsPrivate="True" Label="&lt;get_AddVacationBonusCommand&gt;b__2" />
+    <Node Id="@67" Category="CodeSchema_Method" CodeSchemaProperty_IsCompilerGenerated="True" CodeSchemaProperty_IsPrivate="True" Label="&lt;get_AddVacationBonusCommand&gt;b__3" />
+    <Node Id="@68" Category="CodeSchema_Method" CodeSchemaProperty_IsCompilerGenerated="True" CodeSchemaProperty_IsPrivate="True" Label="&lt;get_EditSelectedeEmployeeCommand&gt;b__6" />
+    <Node Id="@69" Category="CodeSchema_Method" CodeSchemaProperty_IsCompilerGenerated="True" CodeSchemaProperty_IsPrivate="True" Label="&lt;get_EditSelectedeEmployeeCommand&gt;b__7" />
+    <Node Id="@70" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" Label="CloseAsync" />
+    <Node Id="@71" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" Label="GetEmployeesAsync" />
+    <Node Id="@72" Category="CodeSchema_Method" CodeSchemaProperty_IsPrivate="True" Label="OnCloseCompleted" />
+    <Node Id="@73" Category="CodeSchema_Method" CodeSchemaProperty_IsPrivate="True" Label="OnGetEmployeesCompleted" />
+    <Node Id="@74" Category="CodeSchema_Method" CodeSchemaProperty_IsPrivate="True" Label="OnOpenCompleted" />
+    <Node Id="@75" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" Label="OpenAsync" />
+    <Node Id="@78" Category="CodeSchema_Method" CodeSchemaProperty_IsProtected="True" Label="OnPropertyChanged" />
+    <Node Id="@79" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="ViewModelCommand" />
+    <Node Id="@80" Category="CodeSchema_Method" CodeSchemaProperty_IsCompilerGenerated="True" CodeSchemaProperty_IsPrivate="True" Label="&lt;LoadEmployees&gt;b__0" />
+    <Node Id="@81" Category="CodeSchema_Method" CodeSchemaProperty_IsCompilerGenerated="True" CodeSchemaProperty_IsPrivate="True" Label="&lt;OnNavigatedTo&gt;b__0" />
+    <Node Id="@82" Category="CodeSchema_Method" CodeSchemaProperty_IsCompilerGenerated="True" CodeSchemaProperty_IsPrivate="True" Label="&lt;LoadEmployees&gt;b__0" />
+    <Node Id="@83" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" Label="BeginGetEmployees" />
+    <Node Id="@84" Category="CodeSchema_Method" CodeSchemaProperty_IsPrivate="True" Label="SimpleMVVM.EmployeeServiceClient.EmployeeService.BeginGetEmployees" />
+    <Node Id="@85" Category="CodeSchema_Method" CodeSchemaProperty_IsCompilerGenerated="True" CodeSchemaProperty_IsPrivate="True" Label="&lt;OnNavigatedTo&gt;b__1" />
+    <Node Id="@86" Category="CodeSchema_Method" CodeSchemaProperty_IsPrivate="True" Label="OnBeginClose" />
+    <Node Id="@87" Category="CodeSchema_Method" CodeSchemaProperty_IsPrivate="True" Label="OnBeginGetEmployees" />
+    <Node Id="@88" Category="CodeSchema_Method" CodeSchemaProperty_IsPrivate="True" Label="OnBeginOpen" />
+    <Node Id="@89" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="GetEmployeesCompletedEventArgs" />
+    <Node Id="@9" Category="CodeSchema_Class" CodeSchemaProperty_IsPublic="True" Group="Collapsed" Label="EmployeeDataService" />
+    <Node Id="@91" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="EmployeeDataService" />
+    <Node Id="@92" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="EmployeeDetails" />
+    <Node Id="@93" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="EmployeeList" />
+    <Node Id="@94" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="EmployeeListViewModel" />
+    <Node Id="@95" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="EmployeeServiceClient" />
+    <Node Id="@96" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="EmployeeVacationBonusService" />
+    <Node Id="@97" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsProtected="True" CodeSchemaProperty_IsSpecialName="True" Label="ViewModel" />
+    <Node Id="@98" Category="CodeSchema_Method" CodeSchemaProperty_IsPrivate="True" Label="AddVacationBonusToSelectedEmployee" />
+    <Node Id="@99" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" Label="CloseAsync" />
+  </Nodes>
+  <Links>
+    <Link Source="@100" Target="@18" Category="References">
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@100" Target="@41" Category="CodeSchema_Calls" />
+    <Link Source="@101" Target="@113" Category="CodeSchema_Calls" />
+    <Link Source="@101" Target="@49" Category="CodeSchema_Calls" />
+    <Link Source="@102" Target="@30" Category="References">
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@102" Target="@66" Category="CodeSchema_FunctionPointer" />
+    <Link Source="@102" Target="@67" Category="CodeSchema_FunctionPointer" />
+    <Link Source="@102" Target="@79" Category="CodeSchema_Calls" />
+    <Link Source="@104" Target="@113" Category="CodeSchema_Calls" />
+    <Link Source="@105" Target="@113" Category="CodeSchema_Calls" />
+    <Link Source="@106" Target="@30" Category="References">
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@106" Target="@68" Category="CodeSchema_FunctionPointer" />
+    <Link Source="@106" Target="@69" Category="CodeSchema_FunctionPointer" />
+    <Link Source="@106" Target="@79" Category="CodeSchema_Calls" />
+    <Link Source="@107" Target="@6" Category="References">
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@108" Target="@6" Category="References">
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@111" Target="@24" Category="References">
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@113" Target="@6" Category="References">
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@114" Target="@6" Category="References">
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@116" Target="@71" Category="CodeSchema_Calls" />
+    <Link Source="@119" Target="@116" Category="CodeSchema_Calls" />
+    <Link Source="@119" Target="@20" Category="References" />
+    <Link Source="@119" Target="@42" Category="CodeSchema_Calls" />
+    <Link Source="@119" Target="@82" Category="CodeSchema_FunctionPointer" />
+    <Link Source="@119" Target="@95" Category="CodeSchema_Calls" />
+    <Link Source="@12" Target="(@1 @10 @11 Member=(Name=CancelButton_Click OverloadingParameters=[@64,(@36 Namespace=System.Windows Type=RoutedEventArgs)]))" Category="Contains" />
+    <Link Source="@12" Target="(@1 @10 @11 Member=(Name=OKButton_Click OverloadingParameters=[@64,(@36 Namespace=System.Windows Type=RoutedEventArgs)]))" Category="Contains" />
+    <Link Source="@12" Target="@107" Category="Contains" />
+    <Link Source="@12" Target="@117" Category="Contains" />
+    <Link Source="@12" Target="@50" Category="Contains" />
+    <Link Source="@12" Target="@6" Category="References">
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@12" Target="@92" Category="Contains" />
+    <Link Source="@120" Target="@103" Category="CodeSchema_Calls" />
+    <Link Source="@120" Target="@109" Category="CodeSchema_Calls" />
+    <Link Source="@120" Target="@119" Category="CodeSchema_Calls" />
+    <Link Source="@120" Target="@123" Category="CodeSchema_Calls" />
+    <Link Source="@120" Target="@38" Category="CodeSchema_Calls" />
+    <Link Source="@120" Target="@54" Category="CodeSchema_Calls" />
+    <Link Source="@120" Target="@80" Category="CodeSchema_FunctionPointer" />
+    <Link Source="@124" Target="@75" Category="CodeSchema_Calls" />
+    <Link Source="@14" Target="@118" Category="Contains" />
+    <Link Source="@14" Target="@12" Category="References">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@14" Target="@17" Category="References">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@14" Target="@63" Category="Contains" />
+    <Link Source="@14" Target="@81" Category="Contains" />
+    <Link Source="@14" Target="@85" Category="Contains" />
+    <Link Source="@14" Target="@93" Category="Contains" />
+    <Link Source="@17" Target="(@1 @15 @16 Member=(Name=remove_EmployeesLoaded @53))" Category="Contains" />
+    <Link Source="@17" Target="(@1 @15 @16 Member=(Name=remove_ShowEditEmployeeDialog OverloadingParameters=[(@31 @32 Type=(Name=EventHandler @33 GenericArguments=[@26]))]))" Category="Contains" />
+    <Link Source="@17" Target="(@1 @15 @16 Member=get_Employees)" Category="Contains" />
+    <Link Source="@17" Target="@101" Category="Contains" />
+    <Link Source="@17" Target="@102" Category="Contains" />
+    <Link Source="@17" Target="@104" Category="Contains" />
+    <Link Source="@17" Target="@105" Category="Contains" />
+    <Link Source="@17" Target="@106" Category="Contains" />
+    <Link Source="@17" Target="@113" Category="Contains" />
+    <Link Source="@17" Target="@120" Category="Contains" />
+    <Link Source="@17" Target="@123" Category="Contains" />
+    <Link Source="@17" Target="@28" Category="InheritsFrom">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@17" Target="@30" Category="References">
+      <Category Ref="CodeSchema_Calls" />
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@17" Target="@38" Category="Contains" />
+    <Link Source="@17" Target="@43" Category="Contains" />
+    <Link Source="@17" Target="@51" Category="Contains" />
+    <Link Source="@17" Target="@55" Category="Contains" />
+    <Link Source="@17" Target="@6" Category="References">
+      <Category Ref="CodeSchema_Calls" />
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@17" Target="@66" Category="Contains" />
+    <Link Source="@17" Target="@67" Category="Contains" />
+    <Link Source="@17" Target="@68" Category="Contains" />
+    <Link Source="@17" Target="@69" Category="Contains" />
+    <Link Source="@17" Target="@80" Category="Contains" />
+    <Link Source="@17" Target="@9" Category="References">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@17" Target="@94" Category="Contains" />
+    <Link Source="@17" Target="@98" Category="Contains" />
+    <Link Source="@18" Target="@57" Category="Contains" />
+    <Link Source="@18" Target="@83" Category="Contains" />
+    <Link Source="@20" Target="(@1 @2 @19 Member=(@39 @77))" Category="Contains" />
+    <Link Source="@20" Target="(@1 @2 @19 Member=(@39 OverloadingParameters=[(@40 Namespace=System.ServiceModel.Channels Type=Binding),(@40 Namespace=System.ServiceModel Type=EndpointAddress)]))" Category="Contains" />
+    <Link Source="@20" Target="(@1 @2 @19 Member=(@39 OverloadingParameters=[@76,(@40 Namespace=System.ServiceModel Type=EndpointAddress)]))" Category="Contains" />
+    <Link Source="@20" Target="(@1 @2 @19 Member=(@39 OverloadingParameters=[@76,@76]))" Category="Contains" />
+    <Link Source="@20" Target="(@1 @2 @19 Member=(Name=add_CloseCompleted @35))" Category="Contains" />
+    <Link Source="@20" Target="(@1 @2 @19 Member=(Name=add_OpenCompleted @35))" Category="Contains" />
+    <Link Source="@20" Target="(@1 @2 @19 Member=(Name=remove_CloseCompleted @35))" Category="Contains" />
+    <Link Source="@20" Target="(@1 @2 @19 Member=(Name=remove_GetEmployeesCompleted OverloadingParameters=[(@31 @32 Type=(Name=EventHandler @33 GenericArguments=[@22]))]))" Category="Contains" />
+    <Link Source="@20" Target="(@1 @2 @19 Member=(Name=remove_OpenCompleted @35))" Category="Contains" />
+    <Link Source="@20" Target="(@1 @2 @19 Member=(Name=set_CookieContainer OverloadingParameters=[(@46 Namespace=System.Net Type=CookieContainer)]))" Category="Contains" />
+    <Link Source="@20" Target="(@1 @2 @19 Member=get_CookieContainer)" Category="Contains" />
+    <Link Source="@20" Target="@100" Category="Contains" />
+    <Link Source="@20" Target="@116" Category="Contains" />
+    <Link Source="@20" Target="@124" Category="Contains" />
+    <Link Source="@20" Target="@18" Category="Implements">
+      <Category Ref="CodeSchema_Calls" />
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+      <Category Ref="References" />
+    </Link>
+    <Link Source="@20" Target="@4" Category="Contains" />
+    <Link Source="@20" Target="@42" Category="Contains" />
+    <Link Source="@20" Target="@58" Category="Contains" />
+    <Link Source="@20" Target="@59" Category="Contains" />
+    <Link Source="@20" Target="@60" Category="Contains" />
+    <Link Source="@20" Target="@61" Category="Contains" />
+    <Link Source="@20" Target="@70" Category="Contains" />
+    <Link Source="@20" Target="@71" Category="Contains" />
+    <Link Source="@20" Target="@72" Category="Contains" />
+    <Link Source="@20" Target="@73" Category="Contains" />
+    <Link Source="@20" Target="@74" Category="Contains" />
+    <Link Source="@20" Target="@75" Category="Contains" />
+    <Link Source="@20" Target="@84" Category="Contains" />
+    <Link Source="@20" Target="@86" Category="Contains" />
+    <Link Source="@20" Target="@87" Category="Contains" />
+    <Link Source="@20" Target="@88" Category="Contains" />
+    <Link Source="@20" Target="@95" Category="Contains" />
+    <Link Source="@20" Target="@99" Category="Contains" />
+    <Link Source="@21" Target="@48" Category="Contains" />
+    <Link Source="@21" Target="@96" Category="Contains" />
+    <Link Source="@22" Target="@112" Category="Contains" />
+    <Link Source="@22" Target="@89" Category="Contains" />
+    <Link Source="@24" Target="(@1 @2 @23 @90)" Category="Contains" />
+    <Link Source="@24" Target="(@1 @2 @23 Member=(Name=set_AdditionalContactInfo @77))" Category="Contains" />
+    <Link Source="@24" Target="(@1 @2 @23 Member=(Name=set_BusinessEntityID OverloadingParameters=[(@31 @32 Type=Int32)]))" Category="Contains" />
+    <Link Source="@24" Target="(@1 @2 @23 Member=(Name=set_Demographics @77))" Category="Contains" />
+    <Link Source="@24" Target="(@1 @2 @23 Member=(Name=set_EmailPromotion OverloadingParameters=[(@31 @32 Type=Int32)]))" Category="Contains" />
+    <Link Source="@24" Target="(@1 @2 @23 Member=(Name=set_Employee OverloadingParameters=[@6]))" Category="Contains" />
+    <Link Source="@24" Target="(@1 @2 @23 Member=(Name=set_EmployeeReference OverloadingParameters=[(@1 @2 Type=EntityReferenceOfEmployeeqc0sc8lz)]))" Category="Contains" />
+    <Link Source="@24" Target="(@1 @2 @23 Member=(Name=set_FirstName @77))" Category="Contains" />
+    <Link Source="@24" Target="(@1 @2 @23 Member=(Name=set_LastName @77))" Category="Contains" />
+    <Link Source="@24" Target="(@1 @2 @23 Member=(Name=set_MiddleName @77))" Category="Contains" />
+    <Link Source="@24" Target="(@1 @2 @23 Member=(Name=set_ModifiedDate @47))" Category="Contains" />
+    <Link Source="@24" Target="(@1 @2 @23 Member=(Name=set_NameStyle @44))" Category="Contains" />
+    <Link Source="@24" Target="(@1 @2 @23 Member=(Name=set_PersonType @77))" Category="Contains" />
+    <Link Source="@24" Target="(@1 @2 @23 Member=(Name=set_Suffix @77))" Category="Contains" />
+    <Link Source="@24" Target="(@1 @2 @23 Member=(Name=set_Title @77))" Category="Contains" />
+    <Link Source="@24" Target="(@1 @2 @23 Member=(Name=set_rowguid OverloadingParameters=[(@31 @32 Type=Guid)]))" Category="Contains" />
+    <Link Source="@24" Target="(@1 @2 @23 Member=get_AdditionalContactInfo)" Category="Contains" />
+    <Link Source="@24" Target="(@1 @2 @23 Member=get_BusinessEntityID)" Category="Contains" />
+    <Link Source="@24" Target="(@1 @2 @23 Member=get_Demographics)" Category="Contains" />
+    <Link Source="@24" Target="(@1 @2 @23 Member=get_EmailPromotion)" Category="Contains" />
+    <Link Source="@24" Target="(@1 @2 @23 Member=get_EmployeeReference)" Category="Contains" />
+    <Link Source="@24" Target="(@1 @2 @23 Member=get_FirstName)" Category="Contains" />
+    <Link Source="@24" Target="(@1 @2 @23 Member=get_LastName)" Category="Contains" />
+    <Link Source="@24" Target="(@1 @2 @23 Member=get_MiddleName)" Category="Contains" />
+    <Link Source="@24" Target="(@1 @2 @23 Member=get_ModifiedDate)" Category="Contains" />
+    <Link Source="@24" Target="(@1 @2 @23 Member=get_NameStyle)" Category="Contains" />
+    <Link Source="@24" Target="(@1 @2 @23 Member=get_PersonType)" Category="Contains" />
+    <Link Source="@24" Target="(@1 @2 @23 Member=get_Suffix)" Category="Contains" />
+    <Link Source="@24" Target="(@1 @2 @23 Member=get_Title)" Category="Contains" />
+    <Link Source="@24" Target="(@1 @2 @23 Member=get_rowguid)" Category="Contains" />
+    <Link Source="@24" Target="@108" Category="Contains" />
+    <Link Source="@24" Target="@6" Category="References">
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@26" Target="@114" Category="Contains" />
+    <Link Source="@26" Target="@49" Category="Contains" />
+    <Link Source="@26" Target="@52" Category="Contains" />
+    <Link Source="@26" Target="@6" Category="References">
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@28" Target="(@1 @15 @27 Member=(Name=add_PropertyChanged OverloadingParameters=[(@34 Namespace=System.ComponentModel Type=PropertyChangedEventHandler)]))" Category="Contains" />
+    <Link Source="@28" Target="(@1 @15 @27 Member=(Name=remove_PropertyChanged OverloadingParameters=[(@34 Namespace=System.ComponentModel Type=PropertyChangedEventHandler)]))" Category="Contains" />
+    <Link Source="@28" Target="@78" Category="Contains" />
+    <Link Source="@28" Target="@97" Category="Contains" />
+    <Link Source="@30" Target="(@1 @15 @29 Member=(Name=CanExecute @65))" Category="Contains" />
+    <Link Source="@30" Target="(@1 @15 @29 Member=(Name=Execute @65))" Category="Contains" />
+    <Link Source="@30" Target="(@1 @15 @29 Member=(Name=add_CanExecuteChanged @53))" Category="Contains" />
+    <Link Source="@30" Target="(@1 @15 @29 Member=(Name=remove_CanExecuteChanged @53))" Category="Contains" />
+    <Link Source="@30" Target="@121" Category="Contains" />
+    <Link Source="@30" Target="@79" Category="Contains" />
+    <Link Source="@38" Target="@78" Category="CodeSchema_Calls" />
+    <Link Source="@4" Target="(@1 @2 @3 Member=(Name=BeginGetEmployees OverloadingParameters=[(@31 @32 Type=AsyncCallback),@64]))" Category="Contains" />
+    <Link Source="@4" Target="(@1 @2 @3 Member=(Name=EndGetEmployees @56))" Category="Contains" />
+    <Link Source="@4" Target="@18" Category="Implements" />
+    <Link Source="@4" Target="@41" Category="Contains" />
+    <Link Source="@49" Target="@52" Category="CodeSchema_Calls" />
+    <Link Source="@51" Target="@102" Category="CodeSchema_Calls" />
+    <Link Source="@51" Target="@106" Category="CodeSchema_Calls" />
+    <Link Source="@51" Target="@121" Category="CodeSchema_Calls" />
+    <Link Source="@51" Target="@78" Category="CodeSchema_Calls" />
+    <Link Source="@59" Target="@57" Category="CodeSchema_Calls" />
+    <Link Source="@6" Target="(@1 @2 @5 @90)" Category="Contains" />
+    <Link Source="@6" Target="(@1 @2 @5 Member=(Name=set_BirthDate @47))" Category="Contains" />
+    <Link Source="@6" Target="(@1 @2 @5 Member=(Name=set_BusinessEntityID OverloadingParameters=[(@31 @32 Type=Int32)]))" Category="Contains" />
+    <Link Source="@6" Target="(@1 @2 @5 Member=(Name=set_CurrentFlag @44))" Category="Contains" />
+    <Link Source="@6" Target="(@1 @2 @5 Member=(Name=set_Gender @77))" Category="Contains" />
+    <Link Source="@6" Target="(@1 @2 @5 Member=(Name=set_HireDate @47))" Category="Contains" />
+    <Link Source="@6" Target="(@1 @2 @5 Member=(Name=set_JobTitle @77))" Category="Contains" />
+    <Link Source="@6" Target="(@1 @2 @5 Member=(Name=set_LoginID @77))" Category="Contains" />
+    <Link Source="@6" Target="(@1 @2 @5 Member=(Name=set_MaritalStatus @77))" Category="Contains" />
+    <Link Source="@6" Target="(@1 @2 @5 Member=(Name=set_ModifiedDate @47))" Category="Contains" />
+    <Link Source="@6" Target="(@1 @2 @5 Member=(Name=set_NationalIDNumber @77))" Category="Contains" />
+    <Link Source="@6" Target="(@1 @2 @5 Member=(Name=set_OrganizationLevel OverloadingParameters=[(@31 @32 Type=(Name=Nullable @33 GenericArguments=[(@31 @32 Type=Int16)]))]))" Category="Contains" />
+    <Link Source="@6" Target="(@1 @2 @5 Member=(Name=set_Person OverloadingParameters=[@24]))" Category="Contains" />
+    <Link Source="@6" Target="(@1 @2 @5 Member=(Name=set_PersonReference OverloadingParameters=[(@1 @2 Type=EntityReferenceOfPersonqc0sc8lz)]))" Category="Contains" />
+    <Link Source="@6" Target="(@1 @2 @5 Member=(Name=set_SalariedFlag @44))" Category="Contains" />
+    <Link Source="@6" Target="(@1 @2 @5 Member=(Name=set_SickLeaveHours OverloadingParameters=[(@31 @32 Type=Int16)]))" Category="Contains" />
+    <Link Source="@6" Target="(@1 @2 @5 Member=(Name=set_rowguid OverloadingParameters=[(@31 @32 Type=Guid)]))" Category="Contains" />
+    <Link Source="@6" Target="(@1 @2 @5 Member=get_BirthDate)" Category="Contains" />
+    <Link Source="@6" Target="(@1 @2 @5 Member=get_BusinessEntityID)" Category="Contains" />
+    <Link Source="@6" Target="(@1 @2 @5 Member=get_CurrentFlag)" Category="Contains" />
+    <Link Source="@6" Target="(@1 @2 @5 Member=get_Gender)" Category="Contains" />
+    <Link Source="@6" Target="(@1 @2 @5 Member=get_JobTitle)" Category="Contains" />
+    <Link Source="@6" Target="(@1 @2 @5 Member=get_LoginID)" Category="Contains" />
+    <Link Source="@6" Target="(@1 @2 @5 Member=get_MaritalStatus)" Category="Contains" />
+    <Link Source="@6" Target="(@1 @2 @5 Member=get_ModifiedDate)" Category="Contains" />
+    <Link Source="@6" Target="(@1 @2 @5 Member=get_NationalIDNumber)" Category="Contains" />
+    <Link Source="@6" Target="(@1 @2 @5 Member=get_OrganizationLevel)" Category="Contains" />
+    <Link Source="@6" Target="(@1 @2 @5 Member=get_PersonReference)" Category="Contains" />
+    <Link Source="@6" Target="(@1 @2 @5 Member=get_SalariedFlag)" Category="Contains" />
+    <Link Source="@6" Target="(@1 @2 @5 Member=get_SickLeaveHours)" Category="Contains" />
+    <Link Source="@6" Target="(@1 @2 @5 Member=get_rowguid)" Category="Contains" />
+    <Link Source="@6" Target="@110" Category="Contains" />
+    <Link Source="@6" Target="@111" Category="Contains" />
+    <Link Source="@6" Target="@115" Category="Contains" />
+    <Link Source="@6" Target="@24" Category="References">
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@6" Target="@62" Category="Contains" />
+    <Link Source="@61" Target="@57" Category="CodeSchema_Calls" />
+    <Link Source="@63" Target="@120" Category="CodeSchema_Calls" />
+    <Link Source="@63" Target="@43" Category="CodeSchema_Calls" />
+    <Link Source="@63" Target="@55" Category="CodeSchema_Calls" />
+    <Link Source="@63" Target="@81" Category="CodeSchema_FunctionPointer" />
+    <Link Source="@63" Target="@85" Category="CodeSchema_FunctionPointer" />
+    <Link Source="@63" Target="@94" Category="CodeSchema_Calls" />
+    <Link Source="@66" Target="@98" Category="CodeSchema_Calls" />
+    <Link Source="@67" Target="@104" Category="CodeSchema_Calls" />
+    <Link Source="@68" Target="@101" Category="CodeSchema_Calls" />
+    <Link Source="@69" Target="@105" Category="CodeSchema_Calls" />
+    <Link Source="@70" Target="@58" Category="CodeSchema_FunctionPointer" />
+    <Link Source="@70" Target="@72" Category="CodeSchema_FunctionPointer" />
+    <Link Source="@70" Target="@86" Category="CodeSchema_FunctionPointer" />
+    <Link Source="@71" Target="@59" Category="CodeSchema_FunctionPointer" />
+    <Link Source="@71" Target="@73" Category="CodeSchema_FunctionPointer" />
+    <Link Source="@71" Target="@87" Category="CodeSchema_FunctionPointer" />
+    <Link Source="@73" Target="@89" Category="CodeSchema_Calls" />
+    <Link Source="@75" Target="@60" Category="CodeSchema_FunctionPointer" />
+    <Link Source="@75" Target="@74" Category="CodeSchema_FunctionPointer" />
+    <Link Source="@75" Target="@88" Category="CodeSchema_FunctionPointer" />
+    <Link Source="@80" Target="@109" Category="CodeSchema_Calls" />
+    <Link Source="@80" Target="@123" Category="CodeSchema_Calls" />
+    <Link Source="@80" Target="@38" Category="CodeSchema_Calls" />
+    <Link Source="@82" Target="@112" Category="CodeSchema_Calls" />
+    <Link Source="@82" Target="@122" Category="CodeSchema_Calls" />
+    <Link Source="@82" Target="@37" Category="CodeSchema_Calls" />
+    <Link Source="@82" Target="@45" Category="CodeSchema_Calls" />
+    <Link Source="@84" Target="@83" Category="CodeSchema_Calls" />
+    <Link Source="@85" Target="@114" Category="CodeSchema_Calls" />
+    <Link Source="@85" Target="@50" Category="CodeSchema_Calls" />
+    <Link Source="@87" Target="@83" Category="CodeSchema_Calls" />
+    <Link Source="@9" Target="(@1 @7 @8 Member=(Name=remove_EmployeesLoaded @53))" Category="Contains" />
+    <Link Source="@9" Target="@103" Category="Contains" />
+    <Link Source="@9" Target="@109" Category="Contains" />
+    <Link Source="@9" Target="@119" Category="Contains" />
+    <Link Source="@9" Target="@122" Category="Contains" />
+    <Link Source="@9" Target="@37" Category="Contains" />
+    <Link Source="@9" Target="@45" Category="Contains" />
+    <Link Source="@9" Target="@54" Category="Contains" />
+    <Link Source="@9" Target="@82" Category="Contains" />
+    <Link Source="@9" Target="@91" Category="Contains" />
+    <Link Source="@92" Target="@117" Category="CodeSchema_Calls" />
+    <Link Source="@93" Target="@118" Category="CodeSchema_Calls" />
+    <Link Source="@93" Target="@92" Category="CodeSchema_Calls" />
+    <Link Source="@94" Target="@91" Category="CodeSchema_Calls" />
+    <Link Source="@94" Target="@97" Category="CodeSchema_Calls" />
+    <Link Source="@98" Target="@110" Category="CodeSchema_Calls" />
+    <Link Source="@98" Target="@113" Category="CodeSchema_Calls" />
+    <Link Source="@98" Target="@115" Category="CodeSchema_Calls" />
+    <Link Source="@98" Target="@21" Category="References" />
+    <Link Source="@98" Target="@48" Category="CodeSchema_Calls" />
+    <Link Source="@98" Target="@62" Category="CodeSchema_Calls" />
+    <Link Source="@98" Target="@96" Category="CodeSchema_Calls" />
+    <Link Source="@99" Target="@70" Category="CodeSchema_Calls" />
+  </Links>
+  <Categories>
+    <Category Id="CodeSchema_Block" Label="Block" BasedOn="CodeSchema_Statement" CanBeDataDriven="True" DefaultAction="Microsoft.Contains" IsProviderRoot="False" NavigationActionLabel="Blocks" />
+    <Category Id="CodeSchema_Calls" Label="Calls" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Called By" OutgoingActionLabel="Calls" />
+    <Category Id="CodeSchema_Class" Label="Class" BasedOn="CodeSchema_Type" CanBeDataDriven="True" DefaultAction="Node:Both:CodeSchema_Member" Icon="CodeSchema_Class" IsProviderRoot="False" NavigationActionLabel="Classes" />
+    <Category Id="CodeSchema_FunctionPointer" Label="Function Pointer" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Function Pointers" OutgoingActionLabel="Function Pointers" />
+    <Category Id="CodeSchema_Interface" Label="Interface" BasedOn="CodeSchema_Type" CanBeDataDriven="True" DefaultAction="Node:Both:CodeSchema_Member" Icon="CodeSchema_Interface" IsProviderRoot="False" NavigationActionLabel="Interfaces" />
+    <Category Id="CodeSchema_Member" Label="Member" BasedOn="CodeSchema_Block" CanBeDataDriven="True" DefaultAction="Microsoft.Contains" Icon="CodeSchema_Field" IsProviderRoot="False" NavigationActionLabel="Members" />
+    <Category Id="CodeSchema_Method" Label="Method" BasedOn="CodeSchema_Member" CanBeDataDriven="True" DefaultAction="Link:Forward:CodeSchema_Calls" Icon="CodeSchema_Method" IsProviderRoot="False" NavigationActionLabel="Methods" />
+    <Category Id="CodeSchema_ReturnTypeLink" Label="Return" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Return types" OutgoingActionLabel="Return types" />
+    <Category Id="CodeSchema_Statement" Label="Statement" CanBeDataDriven="True" DefaultAction="Microsoft.Contains" IsProviderRoot="False" NavigationActionLabel="Statement" />
+    <Category Id="CodeSchema_Type" Label="Type" BasedOn="CodeSchema_Block" CanBeDataDriven="True" DefaultAction="Node:Both:CodeSchema_Member" Icon="CodeSchema_Class" IsProviderRoot="False" NavigationActionLabel="Types" />
+    <Category Id="Contains" Label="Contains" CanBeDataDriven="False" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Contained By" IsContainment="True" OutgoingActionLabel="Contains" />
+    <Category Id="Implements" Label="Implements" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Implemented by" OutgoingActionLabel="Implements" />
+    <Category Id="InheritsFrom" Label="Inherits From" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Inherited By" OutgoingActionLabel="Inherits From" />
+    <Category Id="References" Label="References" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Referenced By" OutgoingActionLabel="References" />
+  </Categories>
+  <Properties>
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CanLinkedNodesBeDataDriven" Label="CanLinkedNodesBeDataDriven" Description="CanLinkedNodesBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsCompilerGenerated" Label="IsCompilerGenerated" Description="IsCompilerGenerated" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsConstructor" Label="IsConstructor" Description="IsConstructor" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsGeneratedCode" Label="IsGeneratedCode" Description="IsGeneratedCode" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsPrivate" Label="IsPrivate" Description="IsPrivate" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsProtected" Label="IsProtected" Description="IsProtected" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsPublic" Label="IsPublic" Description="IsPublic" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsSpecialName" Label="IsSpecialName" Description="IsSpecialName" DataType="System.Boolean" />
+    <Property Id="DefaultAction" Label="DefaultAction" Description="DefaultAction" DataType="System.String" />
+    <Property Id="GraphDirection" DataType="Microsoft.VisualStudio.Progression.Layout.GraphDirection" />
+    <Property Id="Group" Label="Group" Description="Display the node as a group" DataType="Microsoft.VisualStudio.Progression.GraphModel.GroupStyle" />
+    <Property Id="Icon" Label="Icon" Description="Icon" DataType="System.String" />
+    <Property Id="IncomingActionLabel" Label="IncomingActionLabel" Description="IncomingActionLabel" DataType="System.String" />
+    <Property Id="IsContainment" DataType="System.Boolean" />
+    <Property Id="IsProviderRoot" Label="IsProviderRoot" Description="IsProviderRoot" DataType="System.Boolean" />
+    <Property Id="Label" Label="Label" Description="Displayable label of an Annotatable object" DataType="System.String" />
+    <Property Id="Layout" DataType="System.String" />
+    <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
+    <Property Id="OutgoingActionLabel" Label="OutgoingActionLabel" Description="OutgoingActionLabel" DataType="System.String" />
+  </Properties>
+  <QualifiedNames>
+    <Name Id="ArrayRank" Label="Array Rank" ValueType="System.String" />
+    <Name Id="Assembly" Label="Assembly" ValueType="Uri" />
+    <Name Id="GenericArguments" Label="Generic Arguments" ValueType="Microsoft.VisualStudio.Progression.GraphModel.QualifiedIdentifierArrayCollection" />
+    <Name Id="GenericParameterCount" Label="Generic Parameter Count" ValueType="System.String" />
+    <Name Id="Member" Label="Member" ValueType="System.Object" />
+    <Name Id="Name" Label="Name" ValueType="System.String" />
+    <Name Id="Namespace" Label="Namespace" ValueType="System.String" />
+    <Name Id="OverloadingParameters" Label="Parameter" ValueType="Microsoft.VisualStudio.Progression.GraphModel.QualifiedIdentifierArrayCollection" Formatter="NameValueNoEscape" />
+    <Name Id="ParentType" Label="Parent Type" ValueType="System.Object" />
+    <Name Id="Type" Label="Type" ValueType="System.Object" />
+  </QualifiedNames>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="Assembly" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Assembly')" />
+      <Setter Property="Background" Value="#1C3068" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Namespace" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Namespace')" />
+      <Setter Property="Background" Value="#4A65A0" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Type" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Type')" />
+      <Setter Property="Background" Value="#D3DCEF" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Method" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Method')" />
+      <Setter Property="Background" Value="#FFE0E0E0" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Generics" ValueLabel="Has category">
+      <Condition Expression="HasCategory('Generics')" />
+      <Setter Property="Background" Value="#FFA080A0" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Externals" ValueLabel="Has category">
+      <Condition Expression="HasCategory('Externals')" />
+      <Setter Property="Background" Value="#FFA08080" />
+    </Style>
+  </Styles>
+  <IdentifierAliases>
+    <Alias n="1" Uri="Assembly=$(4baebf43-0012-4dae-9596-1d19f36c868c.OutputPathUri)" />
+    <Alias n="2" Id="Namespace=SimpleMVVM.EmployeeServiceClient" />
+    <Alias n="3" Id="Type=(Name=EmployeeServiceClientChannel ParentType=EmployeeServiceClient)" />
+    <Alias n="4" Id="(@1 @2 @3)" />
+    <Alias n="5" Id="Type=Employee" />
+    <Alias n="6" Id="(@1 @2 @5)" />
+    <Alias n="7" Id="Namespace=SimpleMVVM.Services" />
+    <Alias n="8" Id="Type=EmployeeDataService" />
+    <Alias n="9" Id="(@1 @7 @8)" />
+    <Alias n="10" Id="Namespace=SimpleMVVM" />
+    <Alias n="11" Id="Type=EmployeeDetails" />
+    <Alias n="12" Id="(@1 @10 @11)" />
+    <Alias n="13" Id="Type=EmployeeList" />
+    <Alias n="14" Id="(@1 @10 @13)" />
+    <Alias n="15" Id="Namespace=SimpleMVVM.ViewModels" />
+    <Alias n="16" Id="Type=EmployeeListViewModel" />
+    <Alias n="17" Id="(@1 @15 @16)" />
+    <Alias n="18" Id="(@1 @2 Type=EmployeeService)" />
+    <Alias n="19" Id="Type=EmployeeServiceClient" />
+    <Alias n="20" Id="(@1 @2 @19)" />
+    <Alias n="21" Id="(@1 @7 Type=EmployeeVacationBonusService)" />
+    <Alias n="22" Id="(@1 @2 Type=GetEmployeesCompletedEventArgs)" />
+    <Alias n="23" Id="Type=Person" />
+    <Alias n="24" Id="(@1 @2 @23)" />
+    <Alias n="25" Id="Type=ShowEditEmployeeDialogEventArgs" />
+    <Alias n="26" Id="(@1 @15 @25)" />
+    <Alias n="27" Id="Type=ViewModel" />
+    <Alias n="28" Id="(@1 @15 @27)" />
+    <Alias n="29" Id="Type=ViewModelCommand" />
+    <Alias n="30" Id="(@1 @15 @29)" />
+    <Alias n="31" Uri="Assembly=$(FxReferenceAssembliesUri)/Silverlight/v4.0/mscorlib.dll" />
+    <Alias n="32" Id="Namespace=System" />
+    <Alias n="33" Id="GenericParameterCount=1" />
+    <Alias n="34" Uri="Assembly=$(FxReferenceAssembliesUri)/Silverlight/v4.0/system.dll" />
+    <Alias n="35" Id="OverloadingParameters=[(@31 @32 Type=(Name=EventHandler @33 GenericArguments=[(@34 Namespace=System.ComponentModel Type=AsyncCompletedEventArgs)]))]" />
+    <Alias n="36" Uri="Assembly=$(FxReferenceAssembliesUri)/Silverlight/v4.0/System.Windows.dll" />
+    <Alias n="37" Id="(@1 @7 @8 Member=(Name=set_Employees OverloadingParameters=[(@36 Namespace=System.Collections.ObjectModel Type=(Name=ObservableCollection @33 GenericArguments=[@6]))]))" />
+    <Alias n="38" Id="(@1 @15 @16 Member=(Name=set_Employees OverloadingParameters=[(@36 Namespace=System.Collections.ObjectModel Type=(Name=ObservableCollection @33 GenericArguments=[@6]))]))" />
+    <Alias n="39" Id="Name=.ctor" />
+    <Alias n="40" Uri="Assembly=$(FxReferenceAssembliesUri)/Silverlight/v4.0/System.ServiceModel.dll" />
+    <Alias n="41" Id="(@1 @2 @3 Member=(@39 OverloadingParameters=[(@40 Namespace=System.ServiceModel Type=(Name=ClientBase @33 GenericArguments=[@18]))]))" />
+    <Alias n="42" Id="(@1 @2 @19 Member=(Name=add_GetEmployeesCompleted OverloadingParameters=[(@31 @32 Type=(Name=EventHandler @33 GenericArguments=[@22]))]))" />
+    <Alias n="43" Id="(@1 @15 @16 Member=(Name=add_ShowEditEmployeeDialog OverloadingParameters=[(@31 @32 Type=(Name=EventHandler @33 GenericArguments=[@26]))]))" />
+    <Alias n="44" Id="OverloadingParameters=[(@31 @32 Type=Boolean)]" />
+    <Alias n="45" Id="(@1 @7 @8 Member=(Name=set_AreEmployeesLoaded @44))" />
+    <Alias n="46" Uri="Assembly=$(FxReferenceAssembliesUri)/Silverlight/v4.0/System.Net.dll" />
+    <Alias n="47" Id="OverloadingParameters=[(@31 @32 Type=DateTime)]" />
+    <Alias n="48" Id="(@1 @7 Type=EmployeeVacationBonusService Member=(Name=AddVacationBonus @47))" />
+    <Alias n="49" Id="(@1 @15 @25 Member=(@39 OverloadingParameters=[@6]))" />
+    <Alias n="50" Id="(@1 @10 @11 Member=(Name=set_Employee OverloadingParameters=[@6]))" />
+    <Alias n="51" Id="(@1 @15 @16 Member=(Name=set_SelectedEmployee OverloadingParameters=[@6]))" />
+    <Alias n="52" Id="(@1 @15 @25 Member=(Name=set_SelectedEmployee OverloadingParameters=[@6]))" />
+    <Alias n="53" Id="OverloadingParameters=[(@31 @32 Type=EventHandler)]" />
+    <Alias n="54" Id="(@1 @7 @8 Member=(Name=add_EmployeesLoaded @53))" />
+    <Alias n="55" Id="(@1 @15 @16 Member=(Name=add_EmployeesLoaded @53))" />
+    <Alias n="56" Id="OverloadingParameters=[(@31 @32 Type=IAsyncResult)]" />
+    <Alias n="57" Id="(@1 @2 Type=EmployeeService Member=(Name=EndGetEmployees @56))" />
+    <Alias n="58" Id="(@1 @2 @19 Member=(Name=OnEndClose @56))" />
+    <Alias n="59" Id="(@1 @2 @19 Member=(Name=OnEndGetEmployees @56))" />
+    <Alias n="60" Id="(@1 @2 @19 Member=(Name=OnEndOpen @56))" />
+    <Alias n="61" Id="(@1 @2 @19 Member=(Name=SimpleMVVM.EmployeeServiceClient.EmployeeService.EndGetEmployees @56))" />
+    <Alias n="62" Id="(@1 @2 @5 Member=(Name=set_VacationHours OverloadingParameters=[(@31 @32 Type=Int16)]))" />
+    <Alias n="63" Id="(@1 @10 @13 Member=(Name=OnNavigatedTo OverloadingParameters=[(@36 Namespace=System.Windows.Navigation Type=NavigationEventArgs)]))" />
+    <Alias n="64" Id="(@31 @32 Type=Object)" />
+    <Alias n="65" Id="OverloadingParameters=[@64]" />
+    <Alias n="66" Id="(@1 @15 @16 Member=(Name=&lt;get_AddVacationBonusCommand&gt;b__2 @65))" />
+    <Alias n="67" Id="(@1 @15 @16 Member=(Name=&lt;get_AddVacationBonusCommand&gt;b__3 @65))" />
+    <Alias n="68" Id="(@1 @15 @16 Member=(Name=&lt;get_EditSelectedeEmployeeCommand&gt;b__6 @65))" />
+    <Alias n="69" Id="(@1 @15 @16 Member=(Name=&lt;get_EditSelectedeEmployeeCommand&gt;b__7 @65))" />
+    <Alias n="70" Id="(@1 @2 @19 Member=(Name=CloseAsync @65))" />
+    <Alias n="71" Id="(@1 @2 @19 Member=(Name=GetEmployeesAsync @65))" />
+    <Alias n="72" Id="(@1 @2 @19 Member=(Name=OnCloseCompleted @65))" />
+    <Alias n="73" Id="(@1 @2 @19 Member=(Name=OnGetEmployeesCompleted @65))" />
+    <Alias n="74" Id="(@1 @2 @19 Member=(Name=OnOpenCompleted @65))" />
+    <Alias n="75" Id="(@1 @2 @19 Member=(Name=OpenAsync @65))" />
+    <Alias n="76" Id="(@31 @32 Type=String)" />
+    <Alias n="77" Id="OverloadingParameters=[@76]" />
+    <Alias n="78" Id="(@1 @15 @27 Member=(Name=OnPropertyChanged @77))" />
+    <Alias n="79" Id="(@1 @15 @29 Member=(@39 OverloadingParameters=[(@31 @32 Type=(Name=Action @33 GenericArguments=[@64])),(@31 @32 Type=(Name=Predicate @33 GenericArguments=[@64]))]))" />
+    <Alias n="80" Id="(@1 @15 @16 Member=(Name=&lt;LoadEmployees&gt;b__0 OverloadingParameters=[@64,(@31 @32 Type=EventArgs)]))" />
+    <Alias n="81" Id="(@1 @10 @13 Member=(Name=&lt;OnNavigatedTo&gt;b__0 OverloadingParameters=[@64,(@31 @32 Type=EventArgs)]))" />
+    <Alias n="82" Id="(@1 @7 @8 Member=(Name=&lt;LoadEmployees&gt;b__0 OverloadingParameters=[@64,@22]))" />
+    <Alias n="83" Id="(@1 @2 Type=EmployeeService Member=(Name=BeginGetEmployees OverloadingParameters=[(@31 @32 Type=AsyncCallback),@64]))" />
+    <Alias n="84" Id="(@1 @2 @19 Member=(Name=SimpleMVVM.EmployeeServiceClient.EmployeeService.BeginGetEmployees OverloadingParameters=[(@31 @32 Type=AsyncCallback),@64]))" />
+    <Alias n="85" Id="(@1 @10 @13 Member=(Name=&lt;OnNavigatedTo&gt;b__1 OverloadingParameters=[@64,@26]))" />
+    <Alias n="86" Id="(@1 @2 @19 Member=(Name=OnBeginClose OverloadingParameters=[(@31 @32 Type=(Name=Object ArrayRank=1 ParentType=Object)),(@31 @32 Type=AsyncCallback),@64]))" />
+    <Alias n="87" Id="(@1 @2 @19 Member=(Name=OnBeginGetEmployees OverloadingParameters=[(@31 @32 Type=(Name=Object ArrayRank=1 ParentType=Object)),(@31 @32 Type=AsyncCallback),@64]))" />
+    <Alias n="88" Id="(@1 @2 @19 Member=(Name=OnBeginOpen OverloadingParameters=[(@31 @32 Type=(Name=Object ArrayRank=1 ParentType=Object)),(@31 @32 Type=AsyncCallback),@64]))" />
+    <Alias n="89" Id="(@1 @2 Type=GetEmployeesCompletedEventArgs Member=(@39 OverloadingParameters=[(@31 @32 Type=(Name=Object ArrayRank=1 ParentType=Object)),(@31 @32 Type=Exception),(@31 @32 Type=Boolean),@64]))" />
+    <Alias n="90" Id="Member=.ctor" />
+    <Alias n="91" Id="(@1 @7 @8 @90)" />
+    <Alias n="92" Id="(@1 @10 @11 @90)" />
+    <Alias n="93" Id="(@1 @10 @13 @90)" />
+    <Alias n="94" Id="(@1 @15 @16 @90)" />
+    <Alias n="95" Id="(@1 @2 @19 @90)" />
+    <Alias n="96" Id="(@1 @7 Type=EmployeeVacationBonusService @90)" />
+    <Alias n="97" Id="(@1 @15 @27 @90)" />
+    <Alias n="98" Id="(@1 @15 @16 Member=AddVacationBonusToSelectedEmployee)" />
+    <Alias n="99" Id="(@1 @2 @19 Member=CloseAsync)" />
+    <Alias n="100" Id="(@1 @2 @19 Member=CreateChannel)" />
+    <Alias n="101" Id="(@1 @15 @16 Member=EditSelectedEmployee)" />
+    <Alias n="102" Id="(@1 @15 @16 Member=get_AddVacationBonusCommand)" />
+    <Alias n="103" Id="(@1 @7 @8 Member=get_AreEmployeesLoaded)" />
+    <Alias n="104" Id="(@1 @15 @16 Member=get_CanAddBonus)" />
+    <Alias n="105" Id="(@1 @15 @16 Member=get_CanEditEmployee)" />
+    <Alias n="106" Id="(@1 @15 @16 Member=get_EditSelectedeEmployeeCommand)" />
+    <Alias n="107" Id="(@1 @10 @11 Member=get_Employee)" />
+    <Alias n="108" Id="(@1 @2 @23 Member=get_Employee)" />
+    <Alias n="109" Id="(@1 @7 @8 Member=get_Employees)" />
+    <Alias n="110" Id="(@1 @2 @5 Member=get_HireDate)" />
+    <Alias n="111" Id="(@1 @2 @5 Member=get_Person)" />
+    <Alias n="112" Id="(@1 @2 Type=GetEmployeesCompletedEventArgs Member=get_Result)" />
+    <Alias n="113" Id="(@1 @15 @16 Member=get_SelectedEmployee)" />
+    <Alias n="114" Id="(@1 @15 @25 Member=get_SelectedEmployee)" />
+    <Alias n="115" Id="(@1 @2 @5 Member=get_VacationHours)" />
+    <Alias n="116" Id="(@1 @2 @19 Member=GetEmployeesAsync)" />
+    <Alias n="117" Id="(@1 @10 @11 Member=InitializeComponent)" />
+    <Alias n="118" Id="(@1 @10 @13 Member=InitializeComponent)" />
+    <Alias n="119" Id="(@1 @7 @8 Member=LoadEmployees)" />
+    <Alias n="120" Id="(@1 @15 @16 Member=LoadEmployees)" />
+    <Alias n="121" Id="(@1 @15 @29 Member=OnCanExecuteChanged)" />
+    <Alias n="122" Id="(@1 @7 @8 Member=OnEmployeesLoaded)" />
+    <Alias n="123" Id="(@1 @15 @16 Member=OnEmployeesLoaded)" />
+    <Alias n="124" Id="(@1 @2 @19 Member=OpenAsync)" />
+  </IdentifierAliases>
+  <Paths>
+    <Path Id="4baebf43-0012-4dae-9596-1d19f36c868c.OutputPathUri" Value="file:///C:/Users/Zahid/Documents/GitHub/SimpleMVVM/SimpleMVVM/Bin/Debug/SimpleMVVM.dll" />
+    <Path Id="FxReferenceAssembliesUri" Value="file:///C:/Program Files/Reference Assemblies/Microsoft/Framework" />
+  </Paths>
+</DirectedGraph>
