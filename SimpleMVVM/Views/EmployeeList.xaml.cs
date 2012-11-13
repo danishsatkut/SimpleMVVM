@@ -2,9 +2,8 @@
 using System.Windows.Controls;
 using System.Windows.Navigation;
 using SimpleMVVM.ViewModels;
-using SimpleMVVM.Views;
 
-namespace SimpleMVVM
+namespace SimpleMVVM.Views
 {
     public partial class EmployeeList : Page
     {
