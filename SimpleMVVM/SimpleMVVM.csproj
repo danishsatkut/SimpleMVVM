@@ -194,6 +194,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <DesignData Include="SampleData\EmployeeListViewModelSampleData.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </DesignData>
     <DesignData Include="SampleData\EmployeeSampleData.xaml">
       <Generator>MSBuild:MarkupCompilePass1</Generator>
     </DesignData>

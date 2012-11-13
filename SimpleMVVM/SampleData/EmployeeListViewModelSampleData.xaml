@@ -1,0 +1,25 @@
+<vm:EmployeeListViewModel xmlns:vm="clr-namespace:SimpleMVVM.ViewModels" xmlns:models="clr-namespace:SimpleMVVM.Models"
+                          CanEditEmployee="False" CanAddBonus="True">
+	<vm:EmployeeListViewModel.Employees>
+		<models:Employee FullName="Curabitur vestibulum mauris" FirstName="Aenean maecenas" Gender="Aliquam class" HireDate="11/13/2012 14:32:41" 
+                         LastName="Curae phasellus consequat integer praesent" Salaried="True" Title="Adipiscing nam parturient convallis"/>
+		<models:Employee FullName="Nullam bibendum" FirstName="Quisque accumsan donec" Gender="Aptent auctor dignissim sed" HireDate="11/13/2012 14:32:41" 
+                         LastName="Congue etiam fusce elementum dictumst" Salaried="False" Title="Cursus vestibulum dis est lorem"/>
+		<models:Employee FullName="Eleifend parturient vivamus vestibulum facilisi" FirstName="Facilisis vestibulum adipiscing morbi" Gender="Fermentum faucibus vestibulum" HireDate="11/13/2012 14:32:41" 
+                         LastName="Nulla hac habitant proin leo" Salaried="True" Title="Mus cras fringilla"/>
+		<models:Employee FullName="Nec parturient non" FirstName="Adipiscing duis" Gender="Nunc per aliquam amet dictum" HireDate="11/13/2012 14:32:41" 
+                         LastName="Inceptos interdum vestibulum lobortis ante" Salaried="False" Title="Habitasse aliquet"/>
+		<models:Employee FullName="Sed commodo hendrerit vestibulum dolor" FirstName="Augue blandit lectus" Gender="Conubia sem fames sit libero" HireDate="11/13/2012 14:32:41" 
+                         LastName="Felis adipiscing himenaeos arcu" Salaried="True" Title="Ligula nascetur parturient vestibulum"/>
+		<models:Employee FullName="Vestibulum vel imperdiet diam" FirstName="Ipsum litora" Gender="Eget adipiscing parturient" HireDate="11/13/2012 14:32:41" 
+                         LastName="Cubilia malesuada" Salaried="False" Title="Penatibus porttitor tincidunt"/>
+		<models:Employee FullName="Tristique justo" FirstName="Luctus pharetra" Gender="Lacus nam dapibus magnis elit" HireDate="11/13/2012 14:32:41" 
+                         LastName="Placerat mattis ultricies" Salaried="True" Title="Sed pulvinar"/>
+		<models:Employee FullName="Lorem egestas vestibulum euismod" FirstName="Venenatis vulputate" Gender="Vestibulum dis feugiat" HireDate="11/13/2012 14:32:41" 
+                         LastName="Adipiscing curabitur gravida" Salaried="False" Title="Phasellus magna iaculis"/>
+		<models:Employee FullName="Laoreet natoque enim metus est" FirstName="Mauris mollis massa lacinia" Gender="Morbi consequat montes convallis" HireDate="11/13/2012 14:32:41" 
+                         LastName="Neque erat sagittis" Salaried="True" Title="Hac eros nostra nibh"/>
+		<models:Employee FullName="Vestibulum porta leo" FirstName="Nisi netus nulla parturient nisl" Gender="Dignissim posuere" HireDate="11/13/2012 14:32:41" 
+                         LastName="Elementum purus nunc vestibulum facilisis" Salaried="False" Title="Risus mus"/>
+	</vm:EmployeeListViewModel.Employees>
+</vm:EmployeeListViewModel>
