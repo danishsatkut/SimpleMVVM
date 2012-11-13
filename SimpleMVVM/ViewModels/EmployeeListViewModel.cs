@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using SimpleMVVM.EmployeeServiceClient;
+using System.Linq;
+using Employee = SimpleMVVM.Models.Employee;
 using SimpleMVVM.Services;
 
 namespace SimpleMVVM.ViewModels
@@ -16,8 +18,8 @@ namespace SimpleMVVM.ViewModels
         public ObservableCollection<Employee> Employees
         {
             get { return _employees; }
-            set 
-            { 
+            set
+            {
                 _employees = value;
                 OnPropertyChanged("Employees");
             }
@@ -30,8 +32,8 @@ namespace SimpleMVVM.ViewModels
         public Employee SelectedEmployee
         {
             get { return _selectedEmployee; }
-            set 
-            { 
+            set
+            {
                 _selectedEmployee = value;
                 OnPropertyChanged("SelectedEmployee");
                 AddVacationBonusCommand.OnCanExecuteChanged();
@@ -39,22 +41,50 @@ namespace SimpleMVVM.ViewModels
             }
         }
 
+        /// <summary>
+        /// Loads the employees collection for the view.
+        /// </summary>
         public void LoadEmployees()
         {
             if (_dataService.AreEmployeesLoaded)
             {
-                Employees = _dataService.Employees;
+                Employees = ShapeEmployees(_dataService.Employees);
                 OnEmployeesLoaded();
             }
             else
             {
                 _dataService.EmployeesLoaded += (s, ea) =>
                 {
-                    Employees = _dataService.Employees;
+                    Employees = ShapeEmployees(_dataService.Employees);
                     OnEmployeesLoaded();
                 };
                 _dataService.LoadEmployees();
             }
+        }
+
+        private ObservableCollection<Employee> ShapeEmployees(IEnumerable<EmployeeServiceClient.Employee> employees)
+        {
+            // Create the collection
+            var shapedEmployees = new ObservableCollection<Employee>();
+
+            // Shape each employee and add it to the collection
+            foreach (EmployeeServiceClient.Employee employee in employees)
+            {
+                var employeeModel = new Employee
+                                        {
+                                            FirstName = employee.Person.FirstName,
+                                            LastName = employee.Person.LastName,
+                                            Gender = employee.Gender,
+                                            HireDate = employee.HireDate,
+                                            Salaried = employee.SalariedFlag,
+                                            Title = employee.JobTitle,
+                                            VacationHours = employee.VacationHours
+                                        };
+                shapedEmployees.Add(employeeModel);
+            }
+
+            // Return the collection
+            return shapedEmployees;
         }
 
         public event EventHandler EmployeesLoaded;

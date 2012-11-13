@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Net;
 using System.Collections.ObjectModel;
 using SimpleMVVM.EmployeeServiceClient;
 
@@ -22,16 +21,18 @@ namespace SimpleMVVM.Services
 
         }
 
-        // Load the employees
+        /// <summary>
+        /// Gets the employee data from service client.
+        /// </summary>
         public void LoadEmployees()
         {
             var client = new EmployeeServiceClient.EmployeeServiceClient();
-            client.GetEmployeesCompleted += (s, ea) =>
-            {
-                Employees = ea.Result;
-                AreEmployeesLoaded = true;
-                OnEmployeesLoaded();
-            };
+            client.GetEmployeesCompleted += (sender, args) =>
+                                                {
+                                                    Employees = args.Result;
+                                                    AreEmployeesLoaded = true;
+                                                    OnEmployeesLoaded();
+                                                };
             client.GetEmployeesAsync();
         }
 
