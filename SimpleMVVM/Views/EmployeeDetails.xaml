@@ -3,12 +3,11 @@
 	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 	xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"	
 	xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-    xmlns:models="clr-namespace:SimpleMVVM.Models"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 	mc:Ignorable="d"
 	Title="EmployeeDetails"
 	Width="400" Height="300"
-    d:DataContext="{d:DesignInstance models:Employee}">
+    d:DataContext="{d:DesignData Source=../SampleData/EmployeeSampleData.xaml}">
 	<Grid x:Name="LayoutRoot">
 		<Grid.RowDefinitions>
 			<RowDefinition />

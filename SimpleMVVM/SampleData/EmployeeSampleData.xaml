@@ -1,0 +1,10 @@
+﻿<models:Employee xmlns:models="clr-namespace:SimpleMVVM.Models" xmlns:System="clr-namespace:System;assembly=mscorlib" 
+	FullName="James Bond" 
+	FirstName="James" 
+	Gender="M" 
+	HireDate="04/18/1994" 
+	LastName="Bond" 
+	Salaried="True" 
+	Title="Secret Agent"
+	VacationHours="90">
+</models:Employee>
